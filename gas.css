@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+nav {
+    background: #000000;
+    position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.dream {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.img-logo {
+    width: 5.5vh;
+    height: 5.5vh;
+}
+
+body {
+    background: #ffffff;
+}
+
+.logo {
+position: fixed;
+    background: none;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    margin-right: 2vw;
+    border: none;
+    
+}
+
+.logo-name {
+    font-size: 4.5vw;
+    color: #fff;
+  font-weight: 500;
+  margin-right: 3vw;
+}
+
+.menu-icon {
+color: #fff;
+    font-size: 5vh;
+    margin-right: 2vw;
+    
+}
+
+
+.sidebark {
+position: fixed;
+top: 0;
+right: -200%;
+display: flex;
+flex-direction: column;
+    background: #000000da;
+    height: 100vh; 
+    width: 70vw;  
+    transition: all 0.5s ease;
+    
+}
+
+
+nav.open .sidebark {
+  right: 0;
+}
+
+.button-logo {
+display: flex;
+justify-content: right;
+height: 10vh;
+align-items: center;
+margin-right: 2vw;
+margin-left: 10%;
+background: none;
+border: none;
+}
+
+.button-dashboard {
+display: flex;
+justify-content: right;
+height: 6vh;
+align-items: center;
+margin-right: 2vw;
+margin-left: 10%;
+background: none;
+border: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: -200%;
+  height: 100%;
+  width: 70vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  right: 70vw;
+  pointer-events: auto;
+}
+
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+
+
+.menu-dashboard {
+    color: #fff;
+    font-size: 4vh;
+    margin-right: 3vw;
+}
+
+.bottom {
+background: none;
+    position: fixed;
+    bottom: 0;
+    right: -200%;
+display: flex;
+flex-direction: column;
+transition: all 0.5s ease;
+margin-bottom: 4vh;
+}
+
+nav.open .bottom {
+  right: 0;
+}
+
+
+.container {
+    margin-top: 12vh;
+    font-size: 2vh;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: 4vw;
+    padding-right: 4vh;
+    line-height: 1.7;
+}
+
+p {
+    margin-top: 1.2vh;
+}
+
+
+#preloader {
+    background: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+
+.img-cb {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.ld {
+    width: 20vh;
+    height: 20vh;
+    margin-bottom: 10vh;
+}
